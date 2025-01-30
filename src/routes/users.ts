@@ -8,3 +8,4 @@ export default(router: express.Router) => {
    router.patch("/users/:id", updateUser)
    router.delete("/users/:id", deleteUser)
 }
+ 

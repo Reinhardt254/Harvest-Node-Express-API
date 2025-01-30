@@ -6,8 +6,13 @@ import compression from "compression";
 import dotenv from "dotenv";
 import http from "http";
 import router from "./routes"
+import passport from "./middlewares"
+import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
 
 const app = express();
+
+// Initialize passport middleware
+app.use(passport.initialize());
 
 app.use(cors({
    credentials: true,

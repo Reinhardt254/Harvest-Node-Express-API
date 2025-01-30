@@ -11,7 +11,7 @@ export const createNewUser = async ( name: string, phoneNumber: string, address:
          age: age,
          gender: gender,
       }
-   })
+   }) 
 
    return newUser
 }
